@@ -8,7 +8,8 @@ pose = mpPose.Pose()
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 
-cap = cv2.VideoCapture(1)
+is_computer_macbook = 1
+cap = cv2.VideoCapture(0 if is_computer_macbook else 1)
 
 
 
